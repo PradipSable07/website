@@ -34,10 +34,10 @@
                         right: 0;
                         margin: auto;"></div>
                     </div>
-                    <div class="col-md-8 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="col-md-8 mt-4"
                             style="background-color: #fafafa; border-radius: 5px; padding: 50px;">
-                            <form method="post">
+                            <form method="post" class="form ">
                                 <input type="hidden" name="action_type" value="add_volunteers">
                                 <div class="form-group">
                                     <div class="form-check form-check-inline">
@@ -76,20 +76,34 @@
                                     class="required form-control" value="" placeholder="Enter Your Institution"><br>
                                 <label for="projects" class="active">Your Preferred Projects</label>
                                 <select class="form-control form-control-sm" name="volunteer_pref_projects">
-                                    <option selected>Orphanage Support</option>
-                                    <option>Education Support</option>
-                                    <option>Medical Support</option>
+                                    <option selected value="orphanage support ">Orphanage Support</option>
+                                    <option value="education support">Education Support</option>
+                                    <option value="medical support">Medical Support</option>
                                 </select>
                                 <br>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="location" id="virtual"
+                                            value="virtual">
+                                        <label class="form-check-label" for="virtual">Virtual</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="onground"
+                                            value="onground">
+                                        <label class="form-check-label" for="onground">On Ground</label>
+                                    </div>
+
+                                </div>
                                 <label for="projects" class="active">Your Preferred Day</label>
                                 <select class="form-control form-control-sm" name="volunteer_pref_day">
-                                    <option selected>Sunday</option>
-                                    <option>Monday</option>
-                                    <option>Tuesday</option>
-                                    <option>wednesday</option>
-                                    <option>Thursday</option>
-                                    <option>Friday</option>
-                                    <option>Saturday</option>
+                                    <option selected value="everyday">Everyday</option>
+                                    <option value="sunday">Sunday</option>
+                                    <option value="monday">Monday</option>
+                                    <option value="tuesday">Tuesday</option>
+                                    <option value="wednesday">wednesday</option>
+                                    <option value="thursday">Thursday</option>
+                                    <option value="friday">Friday</option>
+                                    <option value="saturday">Saturday</option>
                                 </select>
                                 <br>
                                 <input name="volunteer_pref_timing" type="text" maxlength="30" value=""
